@@ -8,6 +8,7 @@ public class App
         student.setAge(17);
         studentRepository.save(student);
         System.out.println(studentRepository.findById(1L));
+        System.out.println(studentRepository.findById(2L));
         System.out.println(studentRepository.findAll());
         studentRepository.update(3L,new Student("Beka",18));
          studentRepository.deleteById(2L);
